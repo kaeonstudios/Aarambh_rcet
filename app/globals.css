@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 4%; /* very dark gray/black */
+    --foreground: 0 0% 98%;
+    --surface: 240 5% 8%;
+    --surface-elevated: 240 5% 12%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .gradient-text-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-amber-300;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

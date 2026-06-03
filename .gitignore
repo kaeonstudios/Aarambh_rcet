@@ -1,0 +1,35 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js Build Output & Cache
+/.next/
+/out/
+
+# Production Build
+/build
+
+# Log Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local Environment Secrets
+.env
+.env*.local
+
+# Vercel Cache & Configuration
+.vercel
+
+# Dynamic Public Assets (synced from src/assets)
+/public/assets
+
+# TypeScript Cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Antigravity Agent internal directory
+.agents/
+
