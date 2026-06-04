@@ -6,7 +6,7 @@ export default function Hero() {
   const googleFormUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "https://forms.google.com";
 
   return (
-    <section className="relative h-[100svh] min-h-[600px] w-full flex items-center justify-center overflow-hidden bg-background pt-20">
+    <section className="relative min-h-[100svh] md:h-[100svh] w-full flex items-center justify-center overflow-hidden bg-background pt-32 pb-12 md:pt-20 md:pb-0">
       {/* Background Video */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-background/60 z-10" />
