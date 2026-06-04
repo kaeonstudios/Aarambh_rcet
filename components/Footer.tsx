@@ -9,7 +9,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 relative z-10">
         <div className="grid md:grid-cols-12 gap-12 md:gap-8 mb-16">
-          
+
           {/* Brand Column */}
           <div className="md:col-span-5 flex flex-col items-start">
             <div className="flex items-center gap-3">
@@ -21,10 +21,10 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-6 text-white/60 max-w-sm">
-              India's elite founder hub where early-stage ideas connect directly with investors. 
+              India's elite founder hub where early-stage ideas connect directly with investors.
               Not a competition. A live investment platform.
             </p>
-            <a 
+            <a
               href={process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "https://forms.google.com"}
               target="_blank"
               rel="noopener noreferrer"
@@ -69,13 +69,13 @@ export default function Footer() {
           <p>© {currentYear} AarambhX. All rights reserved.</p>
           <p>
             Designed & Engineered by{" "}
-            <a 
-              href="https://avenirstudios.vercel.app" 
-              target="_blank" 
+            <a
+              href="https://www.kaeonstudios.com"
+              target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gold-400 hover:underline transition-colors"
             >
-              Avenir Studios
+              Kaeon Studios
             </a>
           </p>
         </div>
