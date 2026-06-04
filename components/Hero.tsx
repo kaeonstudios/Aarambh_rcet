@@ -44,7 +44,7 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
-          India's <span className="gradient-text-gold">founder hub</span><br />
+          Royal's <span className="gradient-text-gold">founder hub</span><br />
           where ideas meet capital.
         </h1>
 
