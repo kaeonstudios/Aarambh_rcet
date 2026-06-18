@@ -3,10 +3,10 @@
 import heroBg from "@/src/assets/videos/hero-background.mp4";
 
 export default function Hero() {
-  const googleFormUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "https://forms.google.com";
+  const googleFormUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "https://forms.gle/wxqvGBVTwzZVB1bL8";
 
   return (
-    <section className="relative min-h-[100svh] md:h-[100svh] w-full flex items-center justify-center overflow-hidden bg-background pt-32 pb-12 md:pt-20 md:pb-0">
+    <section className="relative min-h-[100svh] w-full flex items-center justify-center overflow-hidden bg-background pt-28 pb-12 md:pt-36 md:pb-16">
       {/* Background Video */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-background/60 z-10" />

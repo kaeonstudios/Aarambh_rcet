@@ -11,10 +11,10 @@ import rcetCampus from "@/src/assets/videos/rcet-campus.mp4";
 import comingsoon from "@/src/assets/images/coming_soon.jpg";
 
 const POSTERS = [
-  { id: 1, image: comingsoon.src, title: "Coming Soon" },
-  { id: 2, image: comingsoon.src, title: "Coming Soon" },
-  { id: 3, image: comingsoon.src, title: "Coming Soon" },
-  { id: 4, image: comingsoon.src, title: "Coming Soon" },
+  { id: 1, image: keynotePoster.src, title: "Keynote Session" },
+  { id: 2, image: panelPoster.src, title: "Panel Discussion" },
+  { id: 3, image: pitchPoster.src, title: "Pitch Competition" },
+  { id: 4, image: comingsoon.src, title: "More Events Coming Soon" },
 ];
 
 export default function Conclave() {
@@ -78,7 +78,7 @@ export default function Conclave() {
           {/* LEFT: Video */}
           <div className="md:col-span-8 w-full group">
             <div className="relative w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-surface shadow-2xl transition-all duration-500 hover:shadow-gold-500/10">
-              {/* Placeholder Video */}
+              {/* Conclave Highlights Video */}
               <video
                 ref={videoRef}
                 controls
@@ -88,7 +88,7 @@ export default function Conclave() {
                 className="w-full h-full object-cover"
                 aria-label="Conclave highlights video"
               >
-                <source src={rcetCampus} type="video/mp4" />
+                <source src={conclaveHighlights} type="video/mp4" />
               </video>
             </div>
           </div>

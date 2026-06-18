@@ -1,33 +1,39 @@
-import investorAnand from "@/src/assets/images/investor-anand.jpg";
-import operationsSarah from "@/src/assets/images/operations-sarah.jpg";
-import mentorVikram from "@/src/assets/images/mentor-vikram.jpg";
+import principalImg from "@/src/assets/images/Principal.png";
+import ceoImg from "@/src/assets/images/CEO.png";
+import mentorImg from "@/src/assets/images/Mentor.jpg";
+import staffImg from "@/src/assets/images/Staff.jpg";
 import unknown from "@/src/assets/images/unknown.webp";
 
 export default function Backbone() {
   const PEOPLE = [
     {
       id: 1,
-      name: "[NAME]",
-      role: "[ROLE]",
-      badge: "[BADGE]",
-      // quote: "[QUOTE]",
-      image: unknown.src
+      name: "Dr.P Suresh Venugopal",
+      role: "Principal",
+      //badge: "Patron",
+      image: principalImg.src
     },
     {
       id: 2,
-      name: "[NAME]",
-      role: "[ROLE]",
-      badge: "[BADGE]",
-      //quote: "[QUOTE]",
-      image: unknown.src
+      name: "Salim",
+      role: "CEO",
+      //badge: "Leadership",
+      image: ceoImg.src
     },
     {
       id: 3,
-      name: "[NAME]",
-      role: "[ROLE]",
-      badge: "[BADGE]",
-      // quote: "[QUOTE]",
-      image: unknown.src
+      name: "Immanuel Varghese",
+      role: "Startup Mentor",
+      //badge: "Mentor",
+      image: mentorImg.src,
+      objectPosition: "object-top"
+    },
+    {
+      id: 4,
+      name: "Dr.Amal Thomas",
+      role: "Staff Coordinator",
+      //badge: "Coordinator",
+      image: staffImg.src
     }
   ];
 
@@ -55,8 +61,8 @@ export default function Backbone() {
           </div>
         </div>
 
-        {/* 3-Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        {/* 4-Card Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {PEOPLE.map((person) => (
             <div
               key={person.id}
@@ -67,25 +73,24 @@ export default function Backbone() {
                 src={person.image}
                 alt={person.name}
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${
+                  person.objectPosition || "object-center"
+                }`}
               />
 
               {/* Dark Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 transition-opacity duration-300 group-hover:from-black" />
 
               {/* Top Badge */}
-              <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
+              {/* <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
                 <span className="glass px-3 py-1 rounded-full text-xs font-medium text-white/90 shadow-xl">
                   {person.badge}
                 </span>
-              </div>
+              </div> */}
 
               {/* Bottom Content */}
               <div className="absolute bottom-0 inset-x-0 p-6 sm:p-8 flex flex-col justify-end h-full">
                 <div className="transform transition-transform duration-300 group-hover:-translate-y-2">
-                  {/* <p className="font-display italic text-lg sm:text-xl text-white/90 leading-tight mb-6 line-clamp-3">
-                    "{person.quote}"
-                  </p> */}
                   <div>
                     <h3 className="text-xl sm:text-2xl font-semibold text-white mb-1">
                       {person.name}
