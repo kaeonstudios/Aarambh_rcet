@@ -1,6 +1,24 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { verifyJwt } from '@/lib/auth';
+import { jwtVerify } from 'jose';
+
+const getJwtSecretKey = () => {
+  const secret = process.env.JWT_SECRET;
+  if (!secret || secret.length === 0) {
+    return 'super-secret-admin-key-aarambh-hub';
+  }
+  return secret;
+};
+
+async function verifyJwt(token: string) {
+  try {
+    const secret = new TextEncoder().encode(getJwtSecretKey());
+    const { payload } = await jwtVerify(token, secret);
+    return payload;
+  } catch (error) {
+    return null;
+  }
+}
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
