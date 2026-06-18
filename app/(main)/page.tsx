@@ -3,7 +3,7 @@ import Hosting from "@/components/Hosting";
 import Conclave from "@/components/Conclave";
 import Workflow from "@/components/Workflow";
 import Backbone from "@/components/Backbone";
-import FAQ from "@/components/FAQ";
+// import FAQ from "@/components/FAQ";
 import JsonLd from "@/components/JsonLd";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <Conclave />
       <Workflow />
       <Backbone />
-      <FAQ />
+      {/* <FAQ /> */}
     </main>
   );
 }
