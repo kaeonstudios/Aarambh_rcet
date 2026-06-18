@@ -56,7 +56,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 Get in touch
               </span>
               <h2 id="contact-modal-title" className="text-2xl font-display font-semibold">
-                Contact <span className="gradient-text-gold">AarambhX</span>
+                Contact <span className="gradient-text-gold">Aarambh</span>
               </h2>
             </div>
             <button 
@@ -70,13 +70,13 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
           {/* Content */}
           <div className="space-y-6">
-            <a href="mailto:hello@aarambhx.com" className="flex items-start gap-4 group">
+            <a href="mailto:hello@aarambh.com" className="flex items-start gap-4 group">
               <div className="p-3 rounded-2xl glass text-gold-400 group-hover:scale-110 transition-transform">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs font-mono uppercase text-white/50 mb-1">Email</p>
-                <p className="text-white/90 group-hover:text-gold-400 transition-colors">hello@aarambhx.com</p>
+                <p className="text-white/90 group-hover:text-gold-400 transition-colors">hello@aarambh.com</p>
               </div>
             </a>
 

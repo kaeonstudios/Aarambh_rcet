@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/api/'],
     },
-    sitemap: 'https://aarambhx.com/sitemap.xml',
+    sitemap: 'https://aarambh.com/sitemap.xml',
   };
 }

@@ -6,23 +6,23 @@ import { cn } from "@/lib/utils";
 
 const FAQS = [
   {
-    question: "What is AarambhX Hub?",
-    answer: "AarambhX is an elite startup platform and founder incubator hosted at the Royal College of Engineering & Technology (RCET), Thrissur, Kerala. It connects early-stage startup founders directly with active angel investors and institutional funds for live funding, scaling, and structured mentorship.",
+    question: "What is Aarambh Hub?",
+    answer: "Aarambh is an elite startup platform and founder incubator hosted at the Royal College of Engineering & Technology (RCET), Thrissur, Kerala. It connects early-stage startup founders directly with active angel investors and institutional funds for live funding, scaling, and structured mentorship.",
   },
   {
-    question: "Where is AarambhX hosted?",
-    answer: "AarambhX is hosted at the Royal College of Engineering & Technology (RCET) in Akkikavu, Thrissur, Kerala, India. It serves startup founders and investors across Kerala (including Thrissur, Kochi, and Trivandrum) and the wider Indian ecosystem.",
+    question: "Where is Aarambh hosted?",
+    answer: "Aarambh is hosted at the Royal College of Engineering & Technology (RCET) in Akkikavu, Thrissur, Kerala, India. It serves startup founders and investors across Kerala (including Thrissur, Kochi, and Trivandrum) and the wider Indian ecosystem.",
   },
   {
-    question: "How does the AarambhX Conclave pitch process work?",
+    question: "How does the Aarambh Conclave pitch process work?",
     answer: "Founders submit their startup details, team credentials, traction stage, and a clear pitch video. All applications are validated and reviewed within 7 days by our review board. Selected startups are invited to pitch live in front of active investors ready to deploy capital.",
   },
   {
-    question: "Is AarambhX a pitch competition?",
-    answer: "No, AarambhX is not a pitch competition or a college fest event. It is a live investment platform where founders present their business models directly to active angel investors to secure real seed capital, equity partnerships, and post-event accelerator access.",
+    question: "Is Aarambh a pitch competition?",
+    answer: "No, Aarambh is not a pitch competition or a college fest event. It is a live investment platform where founders present their business models directly to active angel investors to secure real seed capital, equity partnerships, and post-event accelerator access.",
   },
   {
-    question: "What are the benefits of pitching at AarambhX?",
+    question: "What are the benefits of pitching at Aarambh?",
     answer: "Founders receive direct seed-funding opportunities, structured validation gate reviews, access to co-working facilities and labs, active mentor matching with industry operators, and post-event scaling support.",
   },
 ];

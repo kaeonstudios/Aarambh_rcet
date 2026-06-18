@@ -3,15 +3,15 @@
 import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import keynotePoster from "@/src/assets/images/keynote-poster.webp";
-import panelPoster from "@/src/assets/images/panel-poster.webp";
-import pitchPoster from "@/src/assets/images/pitch-poster.webp";
+import keynotePoster from "@/src/assets/images/coming_soon.webp";
+import panelPoster from "@/src/assets/images/coming_soon.webp";
+import pitchPoster from "@/src/assets/images/coming_soon.webp";
 import comingsoon from "@/src/assets/images/coming_soon.webp";
 
 const POSTERS = [
-  { id: 1, image: keynotePoster, title: "Keynote Session" },
-  { id: 2, image: panelPoster, title: "Panel Discussion" },
-  { id: 3, image: pitchPoster, title: "Pitch Competition" },
+  { id: 1, image: comingsoon, title: "Keynote Session" },
+  { id: 2, image: comingsoon, title: "Panel Discussion" },
+  { id: 3, image: comingsoon, title: "Pitch Competition" },
   { id: 4, image: comingsoon, title: "More Events Coming Soon" },
 ];
 

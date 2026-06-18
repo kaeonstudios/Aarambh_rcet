@@ -68,7 +68,7 @@ export default function Hero() {
         <div className="glass px-4 py-2 rounded-full flex items-center gap-3 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <div className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
           <span className="text-xs font-mono uppercase tracking-widest text-white/90">
-            AarambhX Hub · Conclave 2K26 · Limited Slots
+            Aarambh Hub · Conclave 2K26 · Limited Slots
           </span>
         </div>
 
@@ -80,7 +80,7 @@ export default function Hero() {
 
         {/* Supporting Text */}
         <p className="text-lg sm:text-xl text-white/70 max-w-2xl mb-4 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300 fill-mode-both">
-          AarambhX is a startup ecosystem that takes founders from idea to funding.
+          Aarambh is a startup ecosystem that takes founders from idea to funding.
           Join our flagship conclave to connect directly with a live investor panel.
         </p>
 

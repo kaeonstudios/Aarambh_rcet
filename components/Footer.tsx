@@ -17,7 +17,7 @@ export default function Footer() {
                 A
               </div>
               <span className="font-display font-semibold text-3xl sm:text-4xl tracking-tight">
-                Aarambh<span className="gradient-text-gold font-bold">X</span>
+                Aarambh
               </span>
             </div>
             <p className="mt-6 text-white/60 max-w-sm">
@@ -57,7 +57,7 @@ export default function Footer() {
               <li>RCET, Thrissur</li>
               <li>Kerala, India</li>
               <li>
-                <a href="mailto:hello@aarambhx.com" className="hover:text-white transition-colors">hello@aarambhx.com</a>
+                <a href="mailto:hello@aarambh.com" className="hover:text-white transition-colors">hello@aarambh.com</a>
               </li>
             </ul>
           </div>
@@ -66,16 +66,16 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-white/40">
-          <p>© {currentYear} AarambhX. All rights reserved.</p>
+          <p>© {currentYear} Aarambh. All rights reserved.</p>
           <p>
             Designed & Engineered by{" "}
             <a
-              href="https://avenirstudios.vercel.app"
+              href="https://www.kaeonstudios.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gold-400 hover:underline transition-colors"
             >
-              Avenir Studios
+              Kaeon Studios
             </a>
           </p>
         </div>

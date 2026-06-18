@@ -37,7 +37,7 @@ export default function Navbar() {
               A
             </div>
             <span className="font-display font-semibold text-xl tracking-tight hidden sm:block">
-              Aarambh<span className="gradient-text-gold font-bold">X</span>
+              Aarambh
             </span>
           </Link>
 
