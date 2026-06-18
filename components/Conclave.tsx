@@ -76,26 +76,26 @@ export default function Conclave() {
           {/* LEFT: Video */}
           <div className="md:col-span-8 w-full group">
             <div className="relative w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-surface shadow-2xl transition-all duration-500 hover:shadow-gold-500/10">
-              {/* Conclave Highlights Video */}
+              {/* RCET Campus Video */}
               <video
                 ref={videoRef}
                 controls
                 muted
                 playsInline
                 preload="metadata"
-                poster="/assets/images/conclave-highlights-poster.webp"
+                poster="/assets/images/rcet-campus-poster.webp"
                 className="w-full h-full object-cover"
-                aria-label="Conclave highlights video"
+                aria-label="RCET Campus overview"
               >
                 {/* Desktop: 1080p */}
-                <source src="/assets/videos/conclave-highlights-1080p.webm" type="video/webm" media="(min-width: 1024px)" />
-                <source src="/assets/videos/conclave-highlights-1080p.mp4" type="video/mp4" media="(min-width: 1024px)" />
+                <source src="/assets/videos/rcet-campus-1080p.webm" type="video/webm" media="(min-width: 1024px)" />
+                <source src="/assets/videos/rcet-campus-1080p.mp4" type="video/mp4" media="(min-width: 1024px)" />
                 {/* Tablet: 720p */}
-                <source src="/assets/videos/conclave-highlights-720p.webm" type="video/webm" media="(min-width: 768px)" />
-                <source src="/assets/videos/conclave-highlights-720p.mp4" type="video/mp4" media="(min-width: 768px)" />
+                <source src="/assets/videos/rcet-campus-720p.webm" type="video/webm" media="(min-width: 768px)" />
+                <source src="/assets/videos/rcet-campus-720p.mp4" type="video/mp4" media="(min-width: 768px)" />
                 {/* Mobile: 480p */}
-                <source src="/assets/videos/conclave-highlights-480p.webm" type="video/webm" />
-                <source src="/assets/videos/conclave-highlights-480p.mp4" type="video/mp4" />
+                <source src="/assets/videos/rcet-campus-480p.webm" type="video/webm" />
+                <source src="/assets/videos/rcet-campus-480p.mp4" type="video/mp4" />
                 Your browser does not support this video format.
               </video>
             </div>
