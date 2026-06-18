@@ -2,19 +2,17 @@
 
 import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
-
-import keynotePoster from "@/src/assets/images/keynote-poster.jpg";
-import panelPoster from "@/src/assets/images/panel-poster.jpg";
-import pitchPoster from "@/src/assets/images/pitch-poster.jpg";
-import conclaveHighlights from "@/src/assets/videos/conclave-highlights.mp4";
-import rcetCampus from "@/src/assets/videos/rcet-campus.mp4";
-import comingsoon from "@/src/assets/images/coming_soon.jpg";
+import Image from "next/image";
+import keynotePoster from "@/src/assets/images/keynote-poster.webp";
+import panelPoster from "@/src/assets/images/panel-poster.webp";
+import pitchPoster from "@/src/assets/images/pitch-poster.webp";
+import comingsoon from "@/src/assets/images/coming_soon.webp";
 
 const POSTERS = [
-  { id: 1, image: keynotePoster.src, title: "Keynote Session" },
-  { id: 2, image: panelPoster.src, title: "Panel Discussion" },
-  { id: 3, image: pitchPoster.src, title: "Pitch Competition" },
-  { id: 4, image: comingsoon.src, title: "More Events Coming Soon" },
+  { id: 1, image: keynotePoster, title: "Keynote Session" },
+  { id: 2, image: panelPoster, title: "Panel Discussion" },
+  { id: 3, image: pitchPoster, title: "Pitch Competition" },
+  { id: 4, image: comingsoon, title: "More Events Coming Soon" },
 ];
 
 export default function Conclave() {
@@ -85,10 +83,20 @@ export default function Conclave() {
                 muted
                 playsInline
                 preload="metadata"
+                poster="/assets/images/conclave-highlights-poster.webp"
                 className="w-full h-full object-cover"
                 aria-label="Conclave highlights video"
               >
-                <source src={conclaveHighlights} type="video/mp4" />
+                {/* Desktop: 1080p */}
+                <source src="/assets/videos/conclave-highlights-1080p.webm" type="video/webm" media="(min-width: 1024px)" />
+                <source src="/assets/videos/conclave-highlights-1080p.mp4" type="video/mp4" media="(min-width: 1024px)" />
+                {/* Tablet: 720p */}
+                <source src="/assets/videos/conclave-highlights-720p.webm" type="video/webm" media="(min-width: 768px)" />
+                <source src="/assets/videos/conclave-highlights-720p.mp4" type="video/mp4" media="(min-width: 768px)" />
+                {/* Mobile: 480p */}
+                <source src="/assets/videos/conclave-highlights-480p.webm" type="video/webm" />
+                <source src="/assets/videos/conclave-highlights-480p.mp4" type="video/mp4" />
+                Your browser does not support this video format.
               </video>
             </div>
           </div>
@@ -109,12 +117,14 @@ export default function Conclave() {
                     index === activePoster ? "opacity-100 z-10" : "opacity-0 z-0"
                   )}
                 >
-                  {/* TODO: Add real poster images */}
-                  <img
+                  <Image
                     src={poster.image}
                     alt={`Conclave poster ${poster.title}`}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
+                    placeholder="blur"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    priority={index === 0}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                 </div>

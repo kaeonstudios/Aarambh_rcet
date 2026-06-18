@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 import { Menu, X, Shield } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import ContactModal from "./ContactModal";
+import dynamic from "next/dynamic";
+
+const ContactModal = dynamic(() => import("./ContactModal"), { ssr: false });
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

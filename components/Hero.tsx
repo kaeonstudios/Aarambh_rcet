@@ -1,9 +1,30 @@
 "use client";
 
-import heroBg from "@/src/assets/videos/hero-background.mp4";
+import { useEffect, useRef } from "react";
 
 export default function Hero() {
   const googleFormUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "https://forms.gle/wxqvGBVTwzZVB1bL8";
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Pause background video when out of viewport to save system resources
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoRef.current?.play().catch(() => {});
+        } else {
+          videoRef.current?.pause();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section className="relative min-h-[100svh] w-full flex items-center justify-center overflow-hidden bg-background pt-28 pb-12 md:pt-36 md:pb-16">
@@ -13,17 +34,26 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/80 z-10" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-10" />
 
-        {/* Placeholder video - TODO: Replace with real campus/startup video */}
         <video
-          autoPlay
+          ref={videoRef}
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/assets/images/hero-background-poster.webp"
           className="w-full h-full object-cover opacity-50"
           aria-hidden="true"
         >
-          <source src={heroBg} type="video/mp4" />
+          {/* Desktop: 1080p */}
+          <source src="/assets/videos/hero-background-1080p.webm" type="video/webm" media="(min-width: 1024px)" />
+          <source src="/assets/videos/hero-background-1080p.mp4" type="video/mp4" media="(min-width: 1024px)" />
+          {/* Tablet: 720p */}
+          <source src="/assets/videos/hero-background-720p.webm" type="video/webm" media="(min-width: 768px)" />
+          <source src="/assets/videos/hero-background-720p.mp4" type="video/mp4" media="(min-width: 768px)" />
+          {/* Mobile: 480p */}
+          <source src="/assets/videos/hero-background-480p.webm" type="video/webm" />
+          <source src="/assets/videos/hero-background-480p.mp4" type="video/mp4" />
+          Your browser does not support this video format.
         </video>
       </div>
 

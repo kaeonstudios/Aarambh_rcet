@@ -1,8 +1,8 @@
-import principalImg from "@/src/assets/images/Principal.png";
-import ceoImg from "@/src/assets/images/CEO.png";
-import mentorImg from "@/src/assets/images/Mentor.jpg";
-import staffImg from "@/src/assets/images/Staff.jpg";
-import unknown from "@/src/assets/images/unknown.webp";
+import Image from "next/image";
+import principalImg from "@/src/assets/images/Principal.webp";
+import ceoImg from "@/src/assets/images/CEO.webp";
+import mentorImg from "@/src/assets/images/Mentor.webp";
+import staffImg from "@/src/assets/images/Staff.webp";
 
 export default function Backbone() {
   const PEOPLE = [
@@ -10,30 +10,26 @@ export default function Backbone() {
       id: 1,
       name: "Dr.P Suresh Venugopal",
       role: "Principal",
-      //badge: "Patron",
-      image: principalImg.src
+      image: principalImg
     },
     {
       id: 2,
       name: "Salim",
       role: "CEO",
-      //badge: "Leadership",
-      image: ceoImg.src
+      image: ceoImg
     },
     {
       id: 3,
       name: "Immanuel Varghese",
       role: "Startup Mentor",
-      //badge: "Mentor",
-      image: mentorImg.src,
+      image: mentorImg,
       objectPosition: "object-top"
     },
     {
       id: 4,
       name: "Dr.Amal Thomas",
       role: "Staff Coordinator",
-      //badge: "Coordinator",
-      image: staffImg.src
+      image: staffImg
     }
   ];
 
@@ -69,10 +65,10 @@ export default function Backbone() {
               className="relative aspect-[4/5] rounded-3xl overflow-hidden group bg-background"
             >
               {/* Image */}
-              <img
+              <Image
                 src={person.image}
                 alt={person.name}
-                loading="lazy"
+                placeholder="blur"
                 className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${
                   person.objectPosition || "object-center"
                 }`}

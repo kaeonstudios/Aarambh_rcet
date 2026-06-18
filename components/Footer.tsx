@@ -70,12 +70,12 @@ export default function Footer() {
           <p>
             Designed & Engineered by{" "}
             <a
-              href="https://www.kaeonstudios.com"
+              href="https://avenirstudios.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gold-400 hover:underline transition-colors"
             >
-              Kaeon Studios
+              Avenir Studios
             </a>
           </p>
         </div>
