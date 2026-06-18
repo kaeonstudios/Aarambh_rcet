@@ -10,7 +10,7 @@ export default function JsonLd() {
       "name": "Aarambh Hub",
       "url": "https://aarambh.com",
       "logo": "https://aarambh.com/assets/images/pitch-poster.webp",
-      "email": "hello@aarambh.com",
+      "email": "royaldruv360@gmail.com",
       "sameAs": [
         "https://www.linkedin.com/company/aarambh",
         "https://instagram.com/aarambh"
@@ -23,8 +23,8 @@ export default function JsonLd() {
       "@id": "https://aarambh.com/#localbusiness",
       "name": "Aarambh Hub",
       "image": "https://aarambh.com/assets/images/pitch-poster.webp",
-      "telephone": "+919876543210",
-      "email": "hello@aarambh.com",
+      "telephone": "+919995428208",
+      "email": "royaldruv360@gmail.com",
       "url": "https://aarambh.com",
       "address": {
         "@type": "PostalAddress",

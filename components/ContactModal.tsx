@@ -70,25 +70,27 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
           {/* Content */}
           <div className="space-y-6">
-            <a href="mailto:hello@aarambh.com" className="flex items-start gap-4 group">
+            <a href="mailto:royaldruv360@gmail.com" className="flex items-start gap-4 group">
               <div className="p-3 rounded-2xl glass text-gold-400 group-hover:scale-110 transition-transform">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs font-mono uppercase text-white/50 mb-1">Email</p>
-                <p className="text-white/90 group-hover:text-gold-400 transition-colors">hello@aarambh.com</p>
+                <p className="text-white/90 group-hover:text-gold-400 transition-colors">royaldruv360@gmail.com</p>
               </div>
             </a>
 
-            <a href="tel:+919876543210" className="flex items-start gap-4 group">
-              <div className="p-3 rounded-2xl glass text-gold-400 group-hover:scale-110 transition-transform">
+            <div className="flex items-start gap-4">
+              <div className="p-3 rounded-2xl glass text-gold-400">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs font-mono uppercase text-white/50 mb-1">Phone</p>
-                <p className="text-white/90 group-hover:text-gold-400 transition-colors">+91 98765 43210</p>
+                <a href="tel:+919995428208" className="block text-white/90 hover:text-gold-400 transition-colors">+91 9995428208</a>
+                <a href="tel:+917736150789" className="block text-white/90 hover:text-gold-400 transition-colors">+91 7736150789</a>
+                <a href="tel:+917907125266" className="block text-white/90 hover:text-gold-400 transition-colors">+91 7907125266</a>
               </div>
-            </a>
+            </div>
 
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-2xl glass text-gold-400">

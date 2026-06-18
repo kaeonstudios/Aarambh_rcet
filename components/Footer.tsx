@@ -57,7 +57,7 @@ export default function Footer() {
               <li>RCET, Thrissur</li>
               <li>Kerala, India</li>
               <li>
-                <a href="mailto:hello@aarambh.com" className="hover:text-white transition-colors">hello@aarambh.com</a>
+                <a href="mailto:royaldruv360@gmail.com" className="hover:text-white transition-colors">royaldruv360@gmail.com</a>
               </li>
             </ul>
           </div>
