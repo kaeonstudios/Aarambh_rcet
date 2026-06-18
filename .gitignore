@@ -33,3 +33,5 @@ next-env.d.ts
 # Antigravity Agent internal directory
 .agents/
 
+
+.vercel
