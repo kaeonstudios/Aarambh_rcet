@@ -19,7 +19,7 @@ export default function Footer() {
               <Image 
                 src={aarambhLogo} 
                 alt="Aarambh Logo" 
-                className="h-[120px] w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
             <p className="mt-6 text-white/60 max-w-sm">
