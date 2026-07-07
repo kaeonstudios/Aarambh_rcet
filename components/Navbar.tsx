@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Shield } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import aarambhLogo from "@/src/assets/images/aarambh_logo.png";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
 
@@ -33,12 +35,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* LEFT: Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br from-gold-400 to-amber-600 text-black font-display font-bold text-xl">
-              A
-            </div>
-            <span className="font-display font-semibold text-xl tracking-tight hidden sm:block">
-              Aarambh
-            </span>
+            <Image 
+              src={aarambhLogo} 
+              alt="Aarambh Logo" 
+              className="h-[100px] w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* CENTER: Desktop Nav */}

@@ -1,22 +1,24 @@
 import Image from "next/image";
 import principalImg from "@/src/assets/images/Principal.webp";
-import ceoImg from "@/src/assets/images/CEO.webp";
+import ceoImg from "@/src/assets/images/CEO.jpeg";
 import mentorImg from "@/src/assets/images/Mentor.webp";
 import staffImg from "@/src/assets/images/Staff.webp";
+import staffImg2 from "@/src/assets/images/Staff_2.jpg";
 
 export default function Backbone() {
   const PEOPLE = [
-    {
-      id: 1,
-      name: "Dr.P Suresh Venugopal",
-      role: "Principal",
-      image: principalImg
-    },
+
     {
       id: 2,
       name: "Salim",
       role: "CEO",
       image: ceoImg
+    },
+    {
+      id: 1,
+      name: "Dr.P Suresh Venugopal",
+      role: "Principal",
+      image: principalImg
     },
     {
       id: 3,
@@ -30,6 +32,12 @@ export default function Backbone() {
       name: "Dr.Amal Thomas",
       role: "Staff Coordinator",
       image: staffImg
+    },
+    {
+      id: 5,
+      name: "Dinto",
+      role: "Staff Coordinator",
+      image: staffImg2
     }
   ];
 
@@ -69,9 +77,8 @@ export default function Backbone() {
                 src={person.image}
                 alt={person.name}
                 placeholder="blur"
-                className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${
-                  person.objectPosition || "object-center"
-                }`}
+                className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${person.objectPosition || "object-center"
+                  }`}
               />
 
               {/* Dark Gradient Overlay */}

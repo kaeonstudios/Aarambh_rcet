@@ -1,3 +1,6 @@
+import Image from "next/image";
+import aarambhLogo from "@/src/assets/images/aarambh_logo.png";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -13,12 +16,11 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="md:col-span-5 flex flex-col items-start">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br from-gold-400 to-amber-600 text-black font-display font-bold text-xl flex-shrink-0">
-                A
-              </div>
-              <span className="font-display font-semibold text-3xl sm:text-4xl tracking-tight">
-                Aarambh
-              </span>
+              <Image 
+                src={aarambhLogo} 
+                alt="Aarambh Logo" 
+                className="h-[120px] w-auto object-contain"
+              />
             </div>
             <p className="mt-6 text-white/60 max-w-sm">
               India's elite founder hub where early-stage ideas connect directly with investors.

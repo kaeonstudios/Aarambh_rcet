@@ -3,16 +3,14 @@
 import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import keynotePoster from "@/src/assets/images/coming_soon.webp";
-import panelPoster from "@/src/assets/images/coming_soon.webp";
-import pitchPoster from "@/src/assets/images/coming_soon.webp";
 import comingsoon from "@/src/assets/images/coming_soon.webp";
+import poster1 from "@/src/assets/images/Aarambh poster 1.jpeg";
+import poster2 from "@/src/assets/images/Aarambh poster 2.jpeg";
 
 const POSTERS = [
-  { id: 1, image: comingsoon, title: "Keynote Session" },
-  { id: 2, image: comingsoon, title: "Panel Discussion" },
-  { id: 3, image: comingsoon, title: "Pitch Competition" },
-  { id: 4, image: comingsoon, title: "More Events Coming Soon" },
+  { id: 1, image: poster1, title: "Aarambh Poster 1" },
+  { id: 2, image: poster2, title: "Aarambh Poster 2" },
+  //{ id: 4, image: comingsoon, title: "More Events Coming Soon" },
 ];
 
 export default function Conclave() {
@@ -83,20 +81,13 @@ export default function Conclave() {
                 muted
                 playsInline
                 preload="metadata"
-                poster="/assets/images/rcet-campus-poster.webp"
                 className="w-full h-full object-cover"
-                aria-label="RCET Campus overview"
+                aria-label="Aarambh Conclave overview"
               >
-                {/* Desktop: 1080p */}
-                <source src="/assets/videos/rcet-campus-1080p.webm" type="video/webm" media="(min-width: 1024px)" />
-                <source src="/assets/videos/rcet-campus-1080p.mp4" type="video/mp4" media="(min-width: 1024px)" />
-                {/* Tablet: 720p */}
-                <source src="/assets/videos/rcet-campus-720p.webm" type="video/webm" media="(min-width: 768px)" />
-                <source src="/assets/videos/rcet-campus-720p.mp4" type="video/mp4" media="(min-width: 768px)" />
-                {/* Mobile: 480p */}
-                <source src="/assets/videos/rcet-campus-480p.webm" type="video/webm" />
-                <source src="/assets/videos/rcet-campus-480p.mp4" type="video/mp4" />
-                Your browser does not support this video format.
+                {/* Desktop/Tablet: 720p Optimized */}
+                <source src="/assets/videos/video1-720p.mp4" type="video/mp4" media="(min-width: 768px)" />
+                {/* Mobile: 480p Optimized */}
+                <source src="/assets/videos/video1-480p.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
