@@ -75,7 +75,7 @@ export default function Footer() {
               href="https://www.kaeonstudios.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 hover:underline transition-colors"
+              className="text-yellow-500 hover:text-yellow-400 hover:underline transition-colors"
             >
               Kaeon
             </a>
