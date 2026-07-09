@@ -58,15 +58,15 @@ export default function Hero() {
       </div>
 
       {/* Floating Ambient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-[128px] animate-pulse-glow z-0" />
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[128px] animate-pulse-glow z-0" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[128px] animate-pulse-glow z-0" />
+      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[128px] animate-pulse-glow z-0" style={{ animationDelay: '1s' }} />
 
       {/* Content */}
       <div className="relative z-20 max-w-5xl mx-auto px-4 flex flex-col items-center text-center">
 
         {/* Eyebrow Badge */}
         <div className="glass px-4 py-2 rounded-full flex items-center gap-3 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <div className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
           <span className="text-xs font-mono uppercase tracking-widest text-white/90">
             Aarambh Hub · Conclave 2K26 · Limited Slots
           </span>
@@ -74,7 +74,7 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
-          Royal's <span className="gradient-text-gold">founder hub</span><br />
+          Royal's <span className="gradient-text-blue">founder hub</span><br />
           where ideas meet capital.
         </h1>
 
@@ -93,7 +93,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-4 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-700 fill-mode-both">
           <button
             onClick={() => window.open(googleFormUrl, '_blank', 'noopener,noreferrer')}
-            className="group relative px-8 py-4 bg-gradient-to-r from-gold-500 to-amber-500 rounded-full text-black font-semibold text-lg hover:scale-105 transition-all w-full sm:w-auto shadow-[0_0_40px_rgba(245,158,11,0.3)] hover:shadow-[0_0_60px_rgba(245,158,11,0.5)]"
+            className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-black font-semibold text-lg hover:scale-105 transition-all w-full sm:w-auto shadow-[0_0_40px_rgba(245,158,11,0.3)] hover:shadow-[0_0_60px_rgba(245,158,11,0.5)]"
           >
             Apply to Pitch
             <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>

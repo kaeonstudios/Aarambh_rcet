@@ -20,8 +20,8 @@
     @apply bg-white/5 backdrop-blur-md border border-white/10;
   }
   
-  .gradient-text-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-amber-300;
+  .gradient-text-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-300;
   }
 }
 

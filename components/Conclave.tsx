@@ -3,13 +3,15 @@
 import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import comingsoon from "@/src/assets/images/coming_soon.webp";
+
 import poster1 from "@/src/assets/images/Aarambh poster 1.jpeg";
 import poster2 from "@/src/assets/images/Aarambh poster 2.jpeg";
+import poster3 from "@/src/assets/images/Aarambh poster 3.jpeg";
 
 const POSTERS = [
   { id: 1, image: poster1, title: "Aarambh Poster 1" },
   { id: 2, image: poster2, title: "Aarambh Poster 2" },
+  { id: 3, image: poster3, title: "Aarambh Poster 3" },
   //{ id: 4, image: comingsoon, title: "More Events Coming Soon" },
 ];
 
@@ -50,18 +52,18 @@ export default function Conclave() {
   return (
     <section id="conclave" className="w-full py-20 lg:py-28 relative overflow-hidden bg-background">
       {/* Background Variation */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-900/10 via-background to-background pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-background to-background pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Header */}
         <div className="mb-12 max-w-2xl">
-          <span className="text-xs font-mono uppercase tracking-widest text-gold-400 mb-4 inline-block">
+          <span className="text-xs font-mono uppercase tracking-widest text-blue-400 mb-4 inline-block">
             The Conclave
           </span>
           <h2 className="text-4xl sm:text-5xl font-display font-semibold tracking-tight text-white mb-6">
             A serious room.<br />
-            <span className="gradient-text-gold">Serious capital.</span>
+            <span className="gradient-text-blue">Serious capital.</span>
           </h2>
           <p className="text-lg text-white/60">
             This isn't a college fest pitching competition. It's an arena where early-stage startups present their vision to active angel investors and institutional funds ready to deploy capital.
@@ -73,7 +75,7 @@ export default function Conclave() {
 
           {/* LEFT: Video */}
           <div className="md:col-span-8 w-full group">
-            <div className="relative w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-surface shadow-2xl transition-all duration-500 hover:shadow-gold-500/10">
+            <div className="relative w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-surface shadow-2xl transition-all duration-500 hover:shadow-blue-500/10">
               {/* RCET Campus Video */}
               <video
                 ref={videoRef}
@@ -130,7 +132,7 @@ export default function Conclave() {
                   onClick={() => setActivePoster(index)}
                   className={cn(
                     "h-1.5 rounded-full transition-all duration-500",
-                    index === activePoster ? "w-8 bg-gold-400" : "w-1.5 bg-white/20 hover:bg-white/40"
+                    index === activePoster ? "w-8 bg-blue-400" : "w-1.5 bg-white/20 hover:bg-white/40"
                   )}
                   aria-label={`Go to slide ${index + 1}`}
                 />

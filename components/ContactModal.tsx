@@ -46,17 +46,17 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
       {/* Modal Card */}
       <div className="relative w-full max-w-md bg-surface-elevated rounded-3xl border border-white/10 shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 max-h-[100dvh] overflow-y-auto">
-        <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-amber-300" />
+        <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-blue-600 via-blue-400 to-cyan-300" />
         
         <div className="p-6 sm:p-8">
           {/* Header */}
           <div className="flex justify-between items-start mb-8">
             <div>
-              <span className="text-xs font-mono text-gold-400 uppercase tracking-wider mb-2 block">
+              <span className="text-xs font-mono text-blue-400 uppercase tracking-wider mb-2 block">
                 Get in touch
               </span>
               <h2 id="contact-modal-title" className="text-2xl font-display font-semibold">
-                Contact <span className="gradient-text-gold">Aarambh</span>
+                Contact <span className="gradient-text-blue">Aarambh</span>
               </h2>
             </div>
             <button 
@@ -71,29 +71,29 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           {/* Content */}
           <div className="space-y-6">
             <a href="mailto:royaldruv360@gmail.com" className="flex items-start gap-4 group">
-              <div className="p-3 rounded-2xl glass text-gold-400 group-hover:scale-110 transition-transform">
+              <div className="p-3 rounded-2xl glass text-blue-400 group-hover:scale-110 transition-transform">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs font-mono uppercase text-white/50 mb-1">Email</p>
-                <p className="text-white/90 group-hover:text-gold-400 transition-colors">royaldruv360@gmail.com</p>
+                <p className="text-white/90 group-hover:text-blue-400 transition-colors">royaldruv360@gmail.com</p>
               </div>
             </a>
 
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl glass text-gold-400">
+              <div className="p-3 rounded-2xl glass text-blue-400">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs font-mono uppercase text-white/50 mb-1">Phone</p>
-                <a href="tel:+919995428208" className="block text-white/90 hover:text-gold-400 transition-colors">+91 9995428208</a>
-                <a href="tel:+917736150789" className="block text-white/90 hover:text-gold-400 transition-colors">+91 7736150789</a>
-                <a href="tel:+917907125266" className="block text-white/90 hover:text-gold-400 transition-colors">+91 7907125266</a>
+                <a href="tel:+919995428208" className="block text-white/90 hover:text-blue-400 transition-colors">+91 9995428208</a>
+                <a href="tel:+917736150789" className="block text-white/90 hover:text-blue-400 transition-colors">+91 7736150789</a>
+                <a href="tel:+917907125266" className="block text-white/90 hover:text-blue-400 transition-colors">+91 7907125266</a>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl glass text-gold-400">
+              <div className="p-3 rounded-2xl glass text-blue-400">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
@@ -106,7 +106,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             </div>
 
             {/*<div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl glass text-gold-400">
+              <div className="p-3 rounded-2xl glass text-blue-400">
                 <Clock className="w-5 h-5" />
               </div>
               <div>

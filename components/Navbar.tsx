@@ -29,16 +29,16 @@ export default function Navbar() {
       <nav
         className={cn(
           "fixed top-0 inset-x-0 z-50 transition-all duration-500",
-          isScrolled ? "py-2 glass" : "py-4 bg-transparent"
+          isScrolled ? "py-1 glass" : "py-2 bg-transparent"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* LEFT: Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <Image 
-              src={aarambhLogo} 
-              alt="Aarambh Logo" 
-              className="h-[100px] w-auto object-contain"
+            <Image
+              src={aarambhLogo}
+              alt="Aarambh Logo"
+              className="h-[80px] w-auto object-contain"
               priority
             />
           </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
             */}
             <button
               onClick={() => window.open(googleFormUrl, '_blank', 'noopener,noreferrer')}
-              className="bg-gradient-to-r from-gold-500 to-amber-500 text-black font-semibold text-sm px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-gold-500/20"
+              className="bg-gradient-to-r from-blue-500 to-cyan-500 text-black font-semibold text-sm px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
             >
               Apply to Pitch
             </button>

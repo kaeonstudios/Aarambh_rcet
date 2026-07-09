@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-background relative overflow-hidden">
       {/* Decorative gradients */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-24 bg-gold-500/10 blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-24 bg-blue-500/10 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 relative z-10">
         <div className="grid md:grid-cols-12 gap-12 md:gap-8 mb-16">
@@ -16,9 +16,9 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="md:col-span-5 flex flex-col items-start">
             <div className="flex items-center gap-3">
-              <Image 
-                src={aarambhLogo} 
-                alt="Aarambh Logo" 
+              <Image
+                src={aarambhLogo}
+                alt="Aarambh Logo"
                 className="h-12 w-auto object-contain"
               />
             </div>
@@ -30,7 +30,7 @@ export default function Footer() {
               href={process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "https://forms.google.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block bg-gradient-to-r from-gold-500 to-amber-500 text-black font-semibold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-gold-500/20 text-center"
+              className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-black font-semibold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20 text-center"
             >
               Apply to Pitch
             </a>
@@ -75,9 +75,9 @@ export default function Footer() {
               href="https://www.kaeonstudios.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gold-400 hover:underline transition-colors"
+              className="hover:text-blue-400 hover:underline transition-colors"
             >
-              Kaeon Studios
+              Kaeon
             </a>
           </p>
         </div>

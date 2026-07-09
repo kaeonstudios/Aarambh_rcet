@@ -4,41 +4,90 @@ import ceoImg from "@/src/assets/images/CEO.jpeg";
 import mentorImg from "@/src/assets/images/Mentor.webp";
 import staffImg from "@/src/assets/images/Staff.webp";
 import staffImg2 from "@/src/assets/images/Staff_2.jpg";
+import SC1 from "@/src/assets/images/Aysha_SC1.jpeg";
+import SC2 from "@/src/assets/images/Aysha_SC2.jpeg";
+import SC3 from "@/src/assets/images/Adhil_SC2.jpeg";
+import SC4 from "@/src/assets/images/Fazanh_SC5.png";
+import SC5 from "@/src/assets/images/nhl_SC4.png";
+import SC6 from "@/src/assets/images/Ayin_SC7.jpeg";
+
 
 export default function Backbone() {
   const PEOPLE = [
 
     {
-      id: 2,
+      id: 1,
       name: "Salim",
       role: "CEO",
       image: ceoImg
     },
     {
-      id: 1,
+      id: 2,
       name: "Dr.P Suresh Venugopal",
       role: "Principal",
       image: principalImg
     },
     {
       id: 3,
+      name: "Dr.Amal Thomas",
+      role: "Staff Coordinator",
+      image: staffImg,
+    },
+    {
+      id: 4,
+      name: "Dinto",
+      role: "Staff Coordinator",
+      image: staffImg2,
+    },
+    {
+      id: 5,
       name: "Immanuel Varghese",
       role: "Startup Mentor",
       image: mentorImg,
       objectPosition: "object-top"
     },
     {
-      id: 4,
-      name: "Dr.Amal Thomas",
-      role: "Staff Coordinator",
-      image: staffImg
+      id: 6,
+      name: "Aysha Shams",
+      role: "Student Coordinator",
+      image: SC1,
+      objectPosition: "object-top"
     },
     {
-      id: 5,
-      name: "Dinto",
-      role: "Staff Coordinator",
-      image: staffImg2
-    }
+      id: 7,
+      name: "Ayin Reji",
+      role: "Student Coordinator",
+      image: SC6,
+      objectPosition: "object-top"
+    },
+    {
+      id: 8,
+      name: "Mohammed Adhil AI",
+      role: "Student Coordinator",
+      image: SC3,
+      objectPosition: "object-top"
+    },
+    {
+      id: 9,
+      name: "Mohammed Nihal S",
+      role: "Student Coordinator",
+      image: SC5,
+      objectPosition: "object-top"
+    },
+    {
+      id: 10,
+      name: "Aysha Mohammed Shafeeque",
+      role: "Student Coordinator",
+      image: SC2,
+      objectPosition: "object-top"
+    },
+    {
+      id: 11,
+      name: "Mohammed Fazhaan",
+      role: "Student Coordinator",
+      image: SC4,
+      objectPosition: "object-top"
+    },
   ];
 
   return (
@@ -51,11 +100,11 @@ export default function Backbone() {
         {/* Header (Split on desktop) */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-12 mb-12 sm:mb-16">
           <div className="max-w-xl">
-            <span className="text-xs font-mono uppercase tracking-widest text-gold-400 mb-4 inline-block">
+            <span className="text-xs font-mono uppercase tracking-widest text-blue-400 mb-4 inline-block">
               The Backbone
             </span>
             <h2 className="text-4xl sm:text-5xl font-display font-semibold tracking-tight text-white leading-tight">
-              Backed by the people <span className="gradient-text-gold">who matter.</span>
+              Backed by the people <span className="gradient-text-blue">who matter.</span>
             </h2>
           </div>
           <div className="max-w-md pb-1">
@@ -76,7 +125,6 @@ export default function Backbone() {
               <Image
                 src={person.image}
                 alt={person.name}
-                placeholder="blur"
                 className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${person.objectPosition || "object-center"
                   }`}
               />
@@ -98,7 +146,7 @@ export default function Backbone() {
                     <h3 className="text-xl sm:text-2xl font-semibold text-white mb-1">
                       {person.name}
                     </h3>
-                    <p className="text-sm font-mono text-gold-400 uppercase tracking-wide">
+                    <p className="text-sm font-mono text-blue-400 uppercase tracking-wide">
                       {person.role}
                     </p>
                   </div>

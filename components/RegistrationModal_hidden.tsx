@@ -133,7 +133,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
         {!isSuccess && (
           <div className="h-1 w-full bg-white/5">
             <div 
-              className="h-full bg-gradient-to-r from-gold-600 to-gold-400 transition-all duration-300"
+              className="h-full bg-gradient-to-r from-blue-600 to-blue-400 transition-all duration-300"
               style={{ width: `${(step / 4) * 100}%` }}
             />
           </div>
@@ -163,7 +163,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
               {/* STEP 1: Basics */}
               <div className={cn("space-y-6", step !== 1 && "hidden")}>
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gold-400 mb-1">Basic details to identify your startup</h3>
+                  <h3 className="text-lg font-semibold text-blue-400 mb-1">Basic details to identify your startup</h3>
                   <p className="text-sm text-white/50">Let's start with the fundamentals.</p>
                 </div>
                 
@@ -171,7 +171,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                   <label className="text-sm font-medium text-white/80">Startup Name</label>
                   <input 
                     {...register("startup_name")}
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all"
+                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all"
                     placeholder="E.g. Acme Corp"
                   />
                   {errors.startup_name && <p className="text-red-400 text-xs">{errors.startup_name.message}</p>}
@@ -181,7 +181,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                   <label className="text-sm font-medium text-white/80">Team Head / Founder Name</label>
                   <input 
                     {...register("team_head")}
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all"
+                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all"
                     placeholder="John Doe"
                   />
                   {errors.team_head && <p className="text-red-400 text-xs">{errors.team_head.message}</p>}
@@ -191,7 +191,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                   <label className="text-sm font-medium text-white/80">Phone Number</label>
                   <input 
                     {...register("phone")}
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all"
+                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all"
                     placeholder="+91 9876543210"
                   />
                   {errors.phone && <p className="text-red-400 text-xs">{errors.phone.message}</p>}
@@ -201,7 +201,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
               {/* STEP 2: Team */}
               <div className={cn("space-y-6", step !== 2 && "hidden")}>
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gold-400 mb-1">Who is building this with you?</h3>
+                  <h3 className="text-lg font-semibold text-blue-400 mb-1">Who is building this with you?</h3>
                   <p className="text-sm text-white/50">Add all core team members.</p>
                 </div>
 
@@ -212,7 +212,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                         <label className="text-xs font-mono text-white/50 uppercase">Member {index + 1}</label>
                         <input 
                           {...register(`members.${index}.name` as const)}
-                          className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 transition-all"
+                          className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 transition-all"
                           placeholder="Member Name"
                         />
                         {errors?.members?.[index]?.name && (
@@ -235,7 +235,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                 <button 
                   type="button"
                   onClick={() => append({ name: "" })}
-                  className="flex items-center gap-2 text-sm text-gold-400 hover:text-gold-300 transition-colors py-2"
+                  className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors py-2"
                 >
                   <Plus className="w-4 h-4" /> Add Team Member
                 </button>
@@ -244,7 +244,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
               {/* STEP 3: Vision */}
               <div className={cn("space-y-6", step !== 3 && "hidden")}>
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gold-400 mb-1">Help us understand your business</h3>
+                  <h3 className="text-lg font-semibold text-blue-400 mb-1">Help us understand your business</h3>
                   <p className="text-sm text-white/50">Traction and product details.</p>
                 </div>
 
@@ -252,7 +252,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                   <label className="text-sm font-medium text-white/80">Select your current traction stage</label>
                   <select 
                     {...register("stage")}
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 transition-all appearance-none text-white"
+                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 transition-all appearance-none text-white"
                   >
                     <option value="" disabled className="text-gray-500">Select stage...</option>
                     {STAGES.map(s => (
@@ -267,7 +267,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                   <textarea 
                     {...register("description")}
                     rows={4}
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 transition-all resize-none"
+                    className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 transition-all resize-none"
                     placeholder="Briefly describe your startup..."
                   />
                   {errors.description && <p className="text-red-400 text-xs">{errors.description.message}</p>}
@@ -278,7 +278,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                     <label className="text-sm font-medium text-white/80">Website (Optional)</label>
                     <input 
                       {...register("website_url")}
-                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 transition-all"
+                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 transition-all"
                       placeholder="https://"
                     />
                     {errors.website_url && <p className="text-red-400 text-xs">{errors.website_url.message}</p>}
@@ -287,7 +287,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                     <label className="text-sm font-medium text-white/80">LinkedIn (Optional)</label>
                     <input 
                       {...register("linkedin_url")}
-                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold-500/50 transition-all"
+                      className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500/50 transition-all"
                       placeholder="https://linkedin.com/..."
                     />
                     {errors.linkedin_url && <p className="text-red-400 text-xs">{errors.linkedin_url.message}</p>}
@@ -298,8 +298,8 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
               {/* STEP 4: Pitch */}
               <div className={cn("space-y-6", step !== 4 && "hidden")}>
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gold-400 mb-1">Show us your pitch (this matters most)</h3>
-                  <p className="text-sm text-amber-200/80 bg-amber-500/10 p-3 rounded-xl mt-3 border border-amber-500/20">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-1">Show us your pitch (this matters most)</h3>
+                  <p className="text-sm text-amber-200/80 bg-cyan-500/10 p-3 rounded-xl mt-3 border border-cyan-500/20">
                     💡 Applications with clear pitch videos are prioritized by the review board.
                   </p>
                 </div>
@@ -311,7 +311,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                       <LinkIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" />
                       <input 
                         {...register("pitch_video_url")}
-                        className="w-full bg-black/40 border border-white/10 rounded-xl pl-12 pr-4 py-3 focus:outline-none focus:border-gold-500/50 transition-all"
+                        className="w-full bg-black/40 border border-white/10 rounded-xl pl-12 pr-4 py-3 focus:outline-none focus:border-blue-500/50 transition-all"
                         placeholder="YouTube, Google Drive, Loom..."
                       />
                     </div>
@@ -328,7 +328,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                   </div>
 
                   <div className="border-2 border-dashed border-white/10 rounded-2xl p-8 text-center hover:bg-white/5 transition-colors cursor-pointer group">
-                    <Upload className="w-8 h-8 text-white/40 mx-auto mb-3 group-hover:text-gold-400 transition-colors" />
+                    <Upload className="w-8 h-8 text-white/40 mx-auto mb-3 group-hover:text-blue-400 transition-colors" />
                     <p className="text-sm text-white/80 font-medium mb-1">Click to upload video file</p>
                     <p className="text-xs text-white/40 font-mono">MP4, WebM up to 100MB</p>
                     {/* TODO: Add real file input and upload handler (Supabase storage) */}
@@ -374,7 +374,7 @@ export default function RegistrationModal({ isOpen, onClose }: { isOpen: boolean
                 type="submit"
                 form="apply-form"
                 disabled={isSubmitting}
-                className="flex items-center gap-2 bg-gradient-to-r from-gold-500 to-amber-500 text-black px-8 py-2.5 rounded-full font-bold hover:opacity-90 transition-opacity disabled:opacity-50"
+                className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-black px-8 py-2.5 rounded-full font-bold hover:opacity-90 transition-opacity disabled:opacity-50"
               >
                 {isSubmitting ? "Submitting..." : "Submit Application"}
               </button>

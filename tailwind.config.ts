@@ -12,10 +12,10 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         surface: "hsl(var(--surface))",
         "surface-elevated": "hsl(var(--surface-elevated))",
-        gold: {
-          400: "#FBBF24",
-          500: "#F59E0B",
-          600: "#D97706",
+        blue: {
+          400: "#60A5FA",
+          500: "#3B82F6",
+          600: "#2563EB",
         },
       },
       fontFamily: {

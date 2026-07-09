@@ -32,13 +32,13 @@ export default function Hosting() {
         {/* Content First */}
         <div className="flex flex-col mb-12 sm:mb-16">
           {/* Eyebrow Label */}
-          <span className="text-xs font-mono uppercase tracking-widest text-gold-400 mb-4 inline-block">
+          <span className="text-xs font-mono uppercase tracking-widest text-blue-400 mb-4 inline-block">
             Institutional Partner
           </span>
           
           {/* Headline */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-semibold tracking-tight max-w-4xl text-white">
-            Hosted at <span className="italic font-light gradient-text-gold">Royal College</span> of Engineering & Technology, Thrissur
+            Hosted at <span className="italic font-light gradient-text-blue">Royal College</span> of Engineering & Technology, Thrissur
           </h2>
           
           {/* Supporting Text */}

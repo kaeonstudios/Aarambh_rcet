@@ -37,18 +37,18 @@ export default function FAQ() {
   return (
     <section id="faq" className="w-full py-20 lg:py-28 bg-surface relative overflow-hidden">
       {/* Background radial glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gold-900/10 via-background to-background pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900/10 via-background to-background pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="mb-16 text-center">
-          <span className="text-xs font-mono uppercase tracking-widest text-gold-400 mb-4 inline-block">
+          <span className="text-xs font-mono uppercase tracking-widest text-blue-400 mb-4 inline-block">
             Frequently Asked Questions
           </span>
           <h2 className="text-4xl sm:text-5xl font-display font-semibold tracking-tight text-white mb-6">
             Got questions?<br />
-            <span className="gradient-text-gold">We have answers.</span>
+            <span className="gradient-text-blue">We have answers.</span>
           </h2>
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
             Everything you need to know about the platform, pitching process, and investment opportunities.
@@ -65,7 +65,7 @@ export default function FAQ() {
                 className={cn(
                   "border rounded-2xl transition-all duration-300 bg-background/50",
                   isOpen 
-                    ? "border-gold-500/30 bg-surface-elevated/40 shadow-[0_0_20px_rgba(245,158,11,0.05)]" 
+                    ? "border-blue-500/30 bg-surface-elevated/40 shadow-[0_0_20px_rgba(245,158,11,0.05)]" 
                     : "border-white/5 hover:border-white/10"
                 )}
               >
@@ -74,13 +74,13 @@ export default function FAQ() {
                   className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-lg font-semibold text-white group-hover:text-gold-400 transition-colors">
+                  <span className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
                     {faq.question}
                   </span>
                   <ChevronDown
                     className={cn(
                       "w-5 h-5 text-white/40 transition-transform duration-300 flex-shrink-0 ml-4",
-                      isOpen && "transform rotate-180 text-gold-400"
+                      isOpen && "transform rotate-180 text-blue-400"
                     )}
                   />
                 </button>

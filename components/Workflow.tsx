@@ -45,11 +45,11 @@ export default function Workflow() {
         
         {/* Header */}
         <div className="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
-          <span className="text-xs font-mono uppercase tracking-widest text-gold-400 mb-4 inline-block">
+          <span className="text-xs font-mono uppercase tracking-widest text-blue-400 mb-4 inline-block">
             The Pipeline
           </span>
           <h2 className="text-4xl sm:text-5xl font-display font-semibold tracking-tight text-white mb-6">
-            From idea to <span className="gradient-text-gold">institution.</span>
+            From idea to <span className="gradient-text-blue">institution.</span>
           </h2>
           <p className="text-lg text-white/60">
             We follow a structured execution framework. Success isn't about vague growth—it's about passing rigorous validation gateways before moving to the next stage of capital deployment.
@@ -61,7 +61,7 @@ export default function Workflow() {
           
           {/* Desktop Horizontal Line */}
           <div className="hidden lg:block absolute top-[48px] left-0 right-0 h-px bg-white/10">
-            <div className="h-full bg-gradient-to-r from-transparent via-gold-500/50 to-transparent w-1/3 animate-[flow_3s_linear_infinite]" />
+            <div className="h-full bg-gradient-to-r from-transparent via-blue-500/50 to-transparent w-1/3 animate-[flow_3s_linear_infinite]" />
           </div>
 
           <div className="flex flex-col lg:grid lg:grid-cols-5 gap-8 lg:gap-4 relative">
@@ -80,8 +80,8 @@ export default function Workflow() {
                   
                   {/* Node */}
                   <div className="relative flex-shrink-0 z-10">
-                    <div className="w-12 h-12 lg:w-24 lg:h-24 rounded-full bg-background border border-white/10 flex items-center justify-center group-hover:border-gold-500/50 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.2)] transition-all duration-300 group-hover:scale-105 relative">
-                      <Icon className="w-5 h-5 lg:w-8 lg:h-8 text-white/50 group-hover:text-gold-400 transition-colors" />
+                    <div className="w-12 h-12 lg:w-24 lg:h-24 rounded-full bg-background border border-white/10 flex items-center justify-center group-hover:border-blue-500/50 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.2)] transition-all duration-300 group-hover:scale-105 relative">
+                      <Icon className="w-5 h-5 lg:w-8 lg:h-8 text-white/50 group-hover:text-blue-400 transition-colors" />
                       
                       {/* Step Badge */}
                       <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-surface-elevated border border-white/10 flex items-center justify-center text-[10px] font-mono text-white/80 z-20">
@@ -92,7 +92,7 @@ export default function Workflow() {
 
                   {/* Content */}
                   <div className="lg:text-center mt-1 lg:mt-0 flex-1">
-                    <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-gold-400 transition-colors">
+                    <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
                       {phase.title}
                     </h3>
                     <p className="text-sm text-white/60 leading-relaxed max-w-xs mx-auto">
