@@ -8,7 +8,7 @@ import SC1 from "@/src/assets/images/Aysha_SC1.jpeg";
 import SC2 from "@/src/assets/images/Aysha_SC2.jpeg";
 import SC3 from "@/src/assets/images/Adhil_SC2.jpeg";
 import SC4 from "@/src/assets/images/Fazanh_SC5.png";
-import SC5 from "@/src/assets/images/nhl_SC4.png";
+import SC5 from "@/src/assets/images/nhl_SC4.PNG";
 import SC6 from "@/src/assets/images/Ayin_SC7.jpeg";
 
 
